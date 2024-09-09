@@ -38,7 +38,7 @@ const Droppable = ({ id, children }) => {
   );
 };
 
-// Function to dynamically render HTML elements based on type
+
 const renderElement = (type, index) => {
   switch (type) {
     case "Label":
@@ -92,7 +92,7 @@ const PageBuilder = () => {
     }
   };
 
-  // Function to save layout to MongoDB or any backend
+  // Function to save layout to MongoDB 
   const saveLayout = async () => {
     try {
       await axios.post('http://localhost:5000/save-layout', {

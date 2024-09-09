@@ -1,4 +1,4 @@
-// server.js
+
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -13,7 +13,7 @@ app.use(cors());
 // Parse incoming JSON data
 app.use(express.json());
 
-// MongoDB Atlas connection string (replace with your credentials)
+// MongoDB Atlas connection string
 const uri = "mongodb+srv://aksingh171999:f989DizinC0zmhyt@cluster0.g9xpk.mongodb.net/PageBuilder";
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected"))
